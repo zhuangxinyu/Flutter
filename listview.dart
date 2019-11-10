@@ -31,10 +31,7 @@ class _MyListViewState extends State<MyListView> {
                     .take(recordcont));
               } //因為items的大小最大只要到20，所以當index增加的時候會有拿完的現象，因此要用if來判斷
               return new Text(items[index].asPascalCase,
-              style: new TextStyle(
-                fontSize: 24.0,
-                color:  Colors.amberAccent
-              ),
+              style: new TextStyle( fontSize: 24.0, color:  Colors.amberAccent),
               );
 
             }
