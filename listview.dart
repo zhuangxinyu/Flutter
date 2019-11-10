@@ -9,9 +9,8 @@ class MyListView extends StatefulWidget {
 class _MyListViewState extends State<MyListView> {
   static int recordcont = 20;
 
-  List<WordPair> items = generateWordPairs()
-      .take(recordcont)
-      .toList(); //一開始的List作為一個容器去接他，後面take是代表要拿幾筆資料，tolist是作為要接一個iterator
+  List<WordPair> items = generateWordPairs().take(recordcont).toList(); 
+  //一開始的List作為一個容器去接他，後面take是代表要拿幾筆資料，tolist是作為要接一個iterator
 
   @override
   Widget build(BuildContext context) {
