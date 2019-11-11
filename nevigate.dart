@@ -9,8 +9,7 @@ class MyNavigate extends StatefulWidget {
 class _MyNavigateState extends State<MyNavigate> {
 
   static int recordcont = 4;
-  List<WordPair> items = generateWordPairs()
-      .take(recordcont).toList();
+  List<WordPair> items = generateWordPairs().take(recordcont).toList();
 
   List<Widget> _rendorRows(){
     int index = 0;
